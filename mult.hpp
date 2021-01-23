@@ -16,9 +16,11 @@ class Mult : public Base {
             rightChild=right;
         }
         virtual double evaluate() { return 0.0;
-        //leftChild.evaluate() * rightChild.evalutate() }
+        //leftChild->evaluate() * rightChild->evalutate() 
+        }
         virtual std::string stringify() { return "*"; 
-        //"("+leftChild.stringify() + "+" + rightChild.stringify() ")";}
+        //"("+leftChild->stringify() + "+" + rightChild->stringify() ")";
+        }
 
         void isOperator(){
           return True;

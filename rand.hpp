@@ -4,7 +4,6 @@
 #include "base.hpp"
 #include <stdlib.h>
 
-using namespace std;
 
 class Rand : public Base {
     private:
@@ -12,12 +11,11 @@ class Rand : public Base {
 
     public:
         Rand() : Base() { double myValue = rand() % 100
-            leftChild=NULL;
-            rightCHild=NULL;
-        }}
+        }
+
         virtual double evaluate() { return myValue; }
         virtual std::string stringify() { return ""+myValue+""; }
-            double getValue(){
+        double getValue(){
             return myValue;
         }
 
@@ -25,11 +23,13 @@ class Rand : public Base {
             return myValue;
         } 
         void isOperator(){
-          return False;
+            return False;
         }
         void isOperand(){
-          return True;
+            return True;
         }
 };
 
 #endif //__RAND_HPP__
+
+5 * -5
