@@ -1,35 +1,35 @@
-#ifndef __OP_HPP__
-#define __OP_HPP__
+#ifndef __RAND_HPP__
+#define __RAND_HPP__
 
 #include "base.hpp"
+#include <stdlib.h>
 
-class Op : public Base {
+using namespace std;
+
+class Rand : public Base {
     private:
         double myValue;
-        Base* leftChild;
-        Base* rightChild
 
     public:
-        Op(double value) : Base() { 
+        Rand() : Base() { double myValue = rand() % 100
             leftChild=NULL;
             rightCHild=NULL;
-        }
+        }}
         virtual double evaluate() { return myValue; }
         virtual std::string stringify() { return ""+myValue+""; }
-        
-        double getValue(){
+            double getValue(){
             return myValue;
         }
-        void setValue(double v){
-            myValue=v;
-        }
+
+        double getValue(){
+            return myValue;
+        } 
         void isOperator(){
           return False;
         }
         void isOperand(){
           return True;
         }
-
 };
 
-#endif //__OP_HPP__
+#endif //__RAND_HPP__
