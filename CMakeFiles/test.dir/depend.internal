@@ -5,6 +5,8 @@ CMakeFiles/test.dir/unit_test.cpp.o
  /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/base.hpp
  /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/op.hpp
  /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/op_test.hpp
+ /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand.hpp
+ /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand_test.hpp
  /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/unit_test.cpp
  googletest/googletest/include/gtest/gtest-death-test.h
  googletest/googletest/include/gtest/gtest-matchers.h

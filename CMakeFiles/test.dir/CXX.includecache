@@ -22,11 +22,25 @@ gtest/gtest.h
 op.hpp
 /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/op.hpp
 
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand.hpp
+base.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/base.hpp
+stdlib.h
+-
+
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand_test.hpp
+gtest/gtest.h
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/gtest/gtest.h
+rand.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand.hpp
+
 /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/unit_test.cpp
 gtest/gtest.h
 /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/gtest/gtest.h
 op_test.hpp
 /home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/op_test.hpp
+rand_test.hpp
+/home/csmajs/llocs001/cs100/labs/lab3/lab-03-composite-coding-cats/rand_test.hpp
 
 googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
