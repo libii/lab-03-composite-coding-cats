@@ -19,9 +19,18 @@ int main() {
     Base* two = new Op(2);
     //Base* mult = new Mult(seven, four);
     //Base* add = new Add(three, mult);
-    Base* add = new Add(three, seven);
+    Base* add = new Add(three, seven); //I added this delete later
     Base* minus = new Sub(add, two);
 
     std::cout << minus->stringify() << " = " << minus->evaluate() << std::endl;
+    
+    Base* Rand1 = new Rand();
+    Base* Rand2 = new Rand();
+
+    Base* randomADD = new Add(Rand1, Rand2);
+
+    std::cout << randomADD->stringify() << " = " << randomADD->evaluate() << std::endl;
+    
+    
     return 0;
 }

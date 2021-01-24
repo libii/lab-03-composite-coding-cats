@@ -17,7 +17,7 @@ class Add : public Base {
         virtual double evaluate() { 
             return leftChild->evaluate() + rightChild->evaluate();
         }
-        virtual std::string stringify() { return "*";
+        virtual std::string stringify() { //return "*";
             return "(" + leftChild->stringify() + "+" + rightChild->stringify() + ")";
         }
 

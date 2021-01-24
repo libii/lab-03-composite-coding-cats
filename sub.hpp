@@ -15,10 +15,10 @@ class Sub : public Base {
             leftChild=left;
             rightChild=right;
         }
-        virtual double evaluate() { return 0.0;
-                return leftChild->evaluate() * rightChild->evaluate();
+        virtual double evaluate() { //return 0.0;
+                return leftChild->evaluate() - rightChild->evaluate();
         }
-        virtual std::string stringify() { return "*";
+        virtual std::string stringify() { //return "*";
                 return leftChild->stringify() + "-" + rightChild->stringify();
         }
 
