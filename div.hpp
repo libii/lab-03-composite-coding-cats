@@ -23,12 +23,6 @@ class Mult : public Base {
         //"("+leftChild->stringify() + "*" + rightChild->stringify() ")";
         }
 
-        void isOperator(){
-          return True;
-        }
-        void isOperand(){
-          return False;
-        }
 
 };
 

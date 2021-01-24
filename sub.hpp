@@ -3,7 +3,7 @@
 
 #include "base.hpp"
 
-class Add : public Base {
+class Sub : public Base {
     private:
         //double value;
         Base* leftChild;
@@ -11,24 +11,18 @@ class Add : public Base {
         
 
     public:
-        Add(Base* left, Base* right) : Base() {
+        Sub(Base* left, Base* right) : Base() {
             leftChild=left;
             rightChild=right;
         }
         virtual double evaluate() { return 0.0;
-                //leftChild->evaluate() * rightChild->evalutate() 
+                return leftChild->evaluate() * rightChild->evaluate();
         }
         virtual std::string stringify() { return "*";
-                //leftChild->stringify() + "+" + rightChild->stringify();
+                return leftChild->stringify() + "-" + rightChild->stringify();
         }
 
-        void isOperator(){
-          return True;
-        }
-        void isOperand(){
-          return False;
-        }
 
 };
 
-#endif //__ADD_HPP__
+#endif //__SUB_HPP__

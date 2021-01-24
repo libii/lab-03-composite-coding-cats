@@ -7,29 +7,22 @@
 
 class Rand : public Base {
     private:
-        double myValue;
+        double myValue=0;
+        Base* leftChild=NULL;
+        Base* rightChild=NULL;
 
     public:
-        Rand() : Base() { double myValue = rand() % 100
+        Rand() : Base() { 
+            double myValue = rand() % 100;
         }
 
         virtual double evaluate() { return myValue; }
-        virtual std::string stringify() { return ""+myValue+""; }
+        virtual std::string stringify() { return std::to_string(myValue); }
+        
         double getValue(){
             return myValue;
         }
 
-        double getValue(){
-            return myValue;
-        } 
-        void isOperator(){
-            return False;
-        }
-        void isOperand(){
-            return True;
-        }
 };
 
 #endif //__RAND_HPP__
-
-5 * -5

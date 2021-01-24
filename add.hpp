@@ -15,17 +15,10 @@ class Add : public Base {
             rightChild=right;
         }
         virtual double evaluate() { 
-            return leftChild->evaluate() + rightChild->evalutate();
+            return leftChild->evaluate() + rightChild->evaluate();
         }
         virtual std::string stringify() { return "*";
             return "(" + leftChild->stringify() + "+" + rightChild->stringify() + ")";
-        }
-
-        void isOperator(){
-            return True;
-        }
-        void isOperand(){
-            return False;
         }
 
 };
